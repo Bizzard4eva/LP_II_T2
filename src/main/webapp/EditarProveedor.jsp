@@ -9,7 +9,7 @@
 </head>
 <body>
 	<%
-		Proveedore proveedor = (Proveedore) request.getAttribute("proveedor");
+		Proveedore proveedor = (Proveedore) request.getAttribute("proveedor2");
 	%>
 	<h2 align="center">EDITAR PROVEEDOR</h2>
 	

@@ -61,7 +61,7 @@
 				<td><%=proveedor.getRuc()%></td>
 				<td><%=proveedor.getEmail()%></td>
 				<td><%=proveedor.getFechaIngreso()%></td>
-				<td><a href="ProveedorServlet?action=Editar&id=<%=proveedor.getIdProveedor()%>">Actualizar</a></td>
+				<td><a href="ProveedorServlet?action=loadEditar&id=<%=proveedor.getIdProveedor()%>">Actualizar</a></td>
 				<td><a href="ProveedorServlet?action=Eliminar&id=<%=proveedor.getIdProveedor()%>">Eliminar</a></td>
 			</tr>
 		<%

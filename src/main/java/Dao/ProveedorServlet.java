@@ -93,9 +93,11 @@ public class ProveedorServlet extends HttpServlet {
 	private void loadEditar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ClassProveedorImpl dao = new ClassProveedorImpl();
 		Proveedore proveedor = new Proveedore();
-		proveedor.setIdProveedor(Integer.parseInt(request.getParameter("id")));
+		Integer id = Integer.parseInt(request.getParameter("id"));
+		proveedor.setIdProveedor(id);
+		Proveedore proveedor2 = dao.getProveedor(proveedor);
 		
-		request.setAttribute("proveedor", dao.getProveedor(proveedor));
+		request.setAttribute("proveedor2", proveedor2);
 		request.getRequestDispatcher("EditarProveedor.jsp").forward(request, response);
 		
 	}
