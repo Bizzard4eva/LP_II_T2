@@ -7,6 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>LPII_CL2_VitterioBernuyJulioEdinson Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -42,8 +43,15 @@
 	  <version>2.7.1</version>
 	</dependency>
 	
+	<dependency>
+	  <groupId>jstl</groupId>
+	  <artifactId>jstl</artifactId>
+	  <version>1.2</version>
+	</dependency>
   </dependencies>
+  
   <build>
     <finalName>LPII_CL2_VitterioBernuyJulioEdinson</finalName>
   </build>
+  
 </project>
