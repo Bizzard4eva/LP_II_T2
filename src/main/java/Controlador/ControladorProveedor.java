@@ -20,12 +20,31 @@ public class ControladorProveedor extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 		ClassProveedorImpl dao = new ClassProveedorImpl();
 		List<Proveedore> listProveedor = dao.listProveedor();
 		request.setAttribute("listProveedores", listProveedor);
-		request.getRequestDispatcher("RegistrarProveedor.jsp").forward(request, response);
+		
+		
+		String action = request.getParameter("action");
+		if (action != null) {
+			switch (action) {
+			case "Listar":
+				request.getRequestDispatcher("RegistrarProveedor.jsp").forward(request, response);
+				break;
+			case "Registrar":
+				
+				break;
+			case "Actualizar":
+				
+				break;
+			case "Eliminar":
+				
+				break;
+			default:
+				break;
+			}
+		}
 		
 	}
 

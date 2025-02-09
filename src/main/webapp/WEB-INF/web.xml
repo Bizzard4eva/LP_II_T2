@@ -16,6 +16,12 @@
   	<description></description>
   	<servlet-class>Controlador.ControladorProveedor</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ProveedorServlet</servlet-name>
+  	<display-name>ProveedorServlet</display-name>
+  	<description></description>
+  	<servlet-class>Dao.ProveedorServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>ControladorLogin</servlet-name>
   	<url-pattern>/ControladorLogin</url-pattern>
@@ -23,5 +29,9 @@
   <servlet-mapping>
   	<servlet-name>ControladorProveedor</servlet-name>
   	<url-pattern>/ControladorProveedor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProveedorServlet</servlet-name>
+  	<url-pattern>/ProveedorServlet</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -20,7 +20,7 @@ public class ClassProveedorImpl implements IProveedor {
 		try
 		{
 			manager.getTransaction().begin();
-			listProveedor = manager.createQuery("Select x from Proveedores x", Proveedore.class).getResultList();
+			listProveedor = manager.createQuery("Select x from Proveedore x", Proveedore.class).getResultList();
 			manager.getTransaction().commit();
 		} catch(Exception e) {
 			if(manager.getTransaction().isActive()) manager.getTransaction().rollback();

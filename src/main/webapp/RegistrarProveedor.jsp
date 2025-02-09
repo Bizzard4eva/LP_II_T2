@@ -11,7 +11,8 @@
 <body>
 	<h2 align="center">REGISTRAR PROVEEDOR</h2>
 	
-	<form action="ControladorProveedor" method="post">
+	<form action="ProveedorServlet" method="post">
+	<input type="hidden" name="action" value="Registrar">
 	<table>
 		<tr>
 			 <td align="center">Nombre:</td>
@@ -60,7 +61,8 @@
 				<td><%=proveedor.getRuc()%></td>
 				<td><%=proveedor.getEmail()%></td>
 				<td><%=proveedor.getFechaIngreso()%></td>
-				<td>Actualizar</td><td>Eliminar</td>
+				<td><a href="ProveedorServlet?action=Editar&id=<%=proveedor.getIdProveedor()%>">Actualizar</a></td>
+				<td><a href="ProveedorServlet?action=Eliminar&id=<%=proveedor.getIdProveedor()%>">Eliminar</a></td>
 			</tr>
 		<%
 			}

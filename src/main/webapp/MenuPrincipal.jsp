@@ -9,7 +9,7 @@
 <body>
 	<h2 align="center">MENU-PRINCIPAL</h2>
 	<h4 align="center">
-		<a href="ControladorProveedor?">REGISTRAR PROVEEDOR</a>
+		<a href="ProveedorServlet?action=loadRegistro">REGISTRAR PROVEEDOR</a>
 	</h4>
 </body>
 </html>
