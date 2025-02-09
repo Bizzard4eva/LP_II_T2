@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
-<body bgcolor="#cEdec9">
+<body bgcolor="#cEdec9" align="center">
 
 	<h2 align="center">ERP-SOLUTIONPERU S.A.C</h2>
 	<h2 align="center">Login</h2>
@@ -14,12 +14,12 @@
 	<form action="ControladorLogin" method="post">
 	<table>
 		<tr>
-			 <td>Usuario</td>
-			 <td><input type="text" name="usuario"></td>
+			 <td align="center">Usuario</td>
+			 <td align="center"><input type="text" name="usuario"></td>
 		</tr>
 		<tr>
-			<td>Password</td>
-			<td><input type="password" name="password"></td>
+			<td align="center">Password</td>
+			<td align="center"><input type="password" name="password"></td>
 		</tr>
 		<tr>
 			<td colspan="2" align="center"><input type="submit" value="Ingresar al Sistema"></td>

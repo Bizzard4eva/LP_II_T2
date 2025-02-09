@@ -22,7 +22,8 @@ public class ControladorLogin extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO
-		doGet(request, response);
+//		doGet(request, response);
+		request.getRequestDispatcher("MenuPrincipal.jsp").forward(request, response);
 	}
 
 }

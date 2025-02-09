@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Menu Principal</title>
 </head>
 <body>
-
+	<h2 align="center">MENU-PRINCIPAL</h2>
+	<h4 align="center">
+		<a href="ControladorProveedor?">REGISTRAR PROVEEDOR</a>
+	</h4>
 </body>
 </html>
